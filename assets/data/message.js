@@ -1,0 +1,11 @@
+export const 身分證錯誤 = "身分證字號格式錯誤";
+export const 必填欄位 = "請勿空白";
+export const 手機錯誤 = "手機號碼格式錯誤";
+export const 你是機器人 = "你是機器人喔";
+export const 密碼至少要四位 = "密碼至少應4位";
+export const 密碼不一致 = "與上方的密碼不符。";
+export const 身分證正面 = "請上傳身分證的正面";
+export const 身分證背面 = "請上傳身分證的背面";
+export const 健保卡或汽機車駕照 = "請上傳健保卡或汽機車駕照的正面";
+export const 必須是圖檔 = "只接受 JPEG、PNG 的副檔名";
+export const 只能有中文 = "只能輸入中文";

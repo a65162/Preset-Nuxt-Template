@@ -1,0 +1,17 @@
+body {
+    font-size: 18px;
+    line-height: 30px;
+    color: $third-color;
+    a {
+        text-decoration: none;
+        transition: all .5s;
+        display: block;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+}
