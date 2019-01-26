@@ -1,6 +1,6 @@
-# RPIMASIA_STOCK_f2e
+# Preset-Nuxt-Template
 
-> 犇亞證券的開戶流程
+> 整合 Nuxt.js 基本要用到的套件
 
 ## Build Setup
 
