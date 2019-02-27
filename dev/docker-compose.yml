@@ -6,8 +6,15 @@ services:
     environment:
       - HOST=0.0.0.0
     ports:
-      - "3000:3000"
+      - "4000:3000"
     volumes:
       - ../app:/app
     command:
       bash -c "npm install && npm run dev"
+#     networks:
+#       - front
+
+
+# networks:
+#   front:
+#     driver: bridge
