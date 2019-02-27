@@ -10,24 +10,12 @@ $eighth-color: #F3F3F3;
 $ninth-color: #144190;
 $tenth-color: #C30F23;
 $eleventh-color: #E83929;
-// component color
-// border
-$border: $second-color;
-$border-2: $first-color;
-$border-3: $seventh-color;
-// text
-$headline: $third-color;
-$description: $second-color;
-$nav-link: $forth-color;
-$list-nav-link: $seventh-color;
-$checkbox: $fifth-color;
-$attention-word: $tenth-color;
-$required-text: $eleventh-color;
-$required-text2: $fifth-color;
-$label: $third-color;
-// background
-$step-bg: $sisth-color;
-$step-active-bg: $first-color;
-$notice-bg: $eighth-color;
-$disabled-button-bg: $second-color;
-$form-bg: $eighth-color;
+
+
+// breakpoint 
+// https://www.npmjs.com/package/breakpoint-sass
+$xl: 1601px;
+$lg: 1441px;
+$md: 1000px;
+$sm: 769px;
+$xs: 481px;
