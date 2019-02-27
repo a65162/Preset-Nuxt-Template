@@ -48,24 +48,24 @@ module.exports = {
     modules: [
         "@nuxtjs/axios",
         "nuxt-sass-resources-loader",
-        // [
-        //     "nuxt-i18n",
-        //     {
-        //         locales: [
-        //             {
-        //                 code: "en",
-        //                 iso: "en-US"
-        //             },
-        //             {
-        //                 code: "zh-TW",
-        //                 iso: "zh-TW"
-        //             }
-        //         ],
-        //         defaultLocale: "zh-TW",
-        //         vueI18nLoader: true,
-        //         // baseUrl: "http://www.fucosolution.com.tw"
-        //     }
-        // ],
+        [
+            "nuxt-i18n",
+            {
+                locales: [
+                    {
+                        code: "en",
+                        iso: "en-US"
+                    },
+                    {
+                        code: "zh-TW",
+                        iso: "zh-TW"
+                    }
+                ],
+                defaultLocale: "zh-TW",
+                vueI18nLoader: true,
+                // baseUrl: "http://www.fucosolution.com.tw"
+            }
+        ],
         "@nuxtjs/sitemap",
     ],
     sassResources: ["@/assets/scss/style.scss"],
@@ -112,6 +112,11 @@ module.exports = {
                     exclude: /(node_modules)/
                 });
             }
+            config.module.rules.push({
+                resourceQuery: /blockType=i18n/,
+                type: "javascript/auto",
+                loader: ["@kazupon/vue-i18n-loader", "yaml-loader"]
+            });
         }
     }
 };
