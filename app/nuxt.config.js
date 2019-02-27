@@ -52,10 +52,10 @@ module.exports = {
             "nuxt-i18n",
             {
                 locales: [
-                    {
-                        code: "en",
-                        iso: "en-US"
-                    },
+                    // {
+                    //     code: "en",
+                    //     iso: "en-US"
+                    // },
                     {
                         code: "zh-TW",
                         iso: "zh-TW"
