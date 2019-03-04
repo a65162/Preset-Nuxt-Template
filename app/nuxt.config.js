@@ -70,7 +70,11 @@ module.exports = {
         "@nuxtjs/sitemap"
     ],
     styleResources: {
-        scss: ["~assets/scss/vars/*.scss", "~assets/scss/mixin/*.scss"]
+        scss: [
+            "~node_modules/breakpoint-sass/stylesheets/_breakpoint.scss",
+            "~assets/scss/mixin/*.scss", 
+            "~assets/scss/vars/*.scss"
+        ]
     },
     axios: {},
     sitemap: {
