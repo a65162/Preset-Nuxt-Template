@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-    mode: "spa",
+    mode: "universal",
 
     /*
      ** Headers of the page
@@ -29,7 +29,8 @@ module.exports = {
      */
     css: [
         "element-ui/lib/theme-chalk/index.css",
-        "css-reset-and-normalize/css/reset-and-normalize.css"
+        "css-reset-and-normalize/css/reset-and-normalize.css",
+        "@/assets/scss/_reset.scss"
     ],
 
     /*
@@ -47,7 +48,7 @@ module.exports = {
      */
     modules: [
         "@nuxtjs/axios",
-        "nuxt-sass-resources-loader",
+        "@nuxtjs/style-resources",
         [
             "nuxt-i18n",
             {
@@ -62,13 +63,15 @@ module.exports = {
                     }
                 ],
                 defaultLocale: "zh-TW",
-                vueI18nLoader: true,
+                vueI18nLoader: true
                 // baseUrl: "http://www.fucosolution.com.tw"
             }
         ],
-        "@nuxtjs/sitemap",
+        "@nuxtjs/sitemap"
     ],
-    sassResources: ["@/assets/scss/style.scss"],
+    styleResources: {
+        scss: ["~assets/scss/vars/*.scss", "~assets/scss/mixin/*.scss"]
+    },
     axios: {},
     sitemap: {
         path: "/sitemap.xml",
@@ -94,11 +97,14 @@ module.exports = {
      */
     build: {
         vendor: ["jquery"],
+        transpile: [/^element-ui/],
         plugins: [
             new webpack.ProvidePlugin({
-                $: "jquery"
+                $: "jquery",
+                jQuery: "jquery"
             })
         ],
+        extractCSS: true,
         /*
          ** You can extend webpack config here
          */

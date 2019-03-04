@@ -15,5 +15,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-
+.front-page {
+    color: $first-color;
+}
 </style>
