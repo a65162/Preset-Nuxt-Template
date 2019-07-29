@@ -1,79 +1,80 @@
 {
-    "name": "basic_nuxt_project",
-    "version": "1.0.0",
-    "description": "整合必要的套件進 Nuxt.js",
-    "author": "阿洧",
-    "private": true,
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate",
-        "test": "ava"
+  "name": "basic_nuxt_project",
+  "version": "1.0.0",
+  "description": "整合必要的套件進 Nuxt.js",
+  "author": "阿洧",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "ava"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/sitemap": "^0.2.0",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "breakpoint-sass": "^2.7.1",
+    "cross-env": "^5.2.0",
+    "css-reset-and-normalize": "^1.2.0",
+    "element-ui": "^2.5.0",
+    "jquery": "^3.4.1",
+    "nuxt": "^2.8.1",
+    "nuxt-i18n": "^5.8.4",
+    "nuxt-memwatch": "^0.1.2"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "ava": "^1.0.1",
+    "babel-eslint": "^10.0.1",
+    "browser-env": "^3.2.5",
+    "eslint": "^5.12.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^5.1.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^0.1.1",
+    "require-extension-hooks-vue": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "yaml-loader": "^0.5.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
     },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^1.2.12",
-        "@fortawesome/free-solid-svg-icons": "^5.6.3",
-        "@fortawesome/vue-fontawesome": "^0.1.5",
-        "@nuxtjs/axios": "^5.3.6",
-        "@nuxtjs/sitemap": "^0.2.0",
-        "@nuxtjs/style-resources": "^0.1.2",
-        "breakpoint-sass": "^2.7.1",
-        "cross-env": "^5.2.0",
-        "css-reset-and-normalize": "^1.2.0",
-        "element-ui": "^2.5.0",
-        "jquery": "^3.3.1",
-        "nuxt": "^2.3.4",
-        "nuxt-i18n": "^5.8.4"
-    },
-    "devDependencies": {
-        "@vue/test-utils": "^1.0.0-beta.27",
-        "ava": "^1.0.1",
-        "babel-eslint": "^10.0.1",
-        "browser-env": "^3.2.5",
-        "eslint": "^5.12.1",
-        "eslint-loader": "^2.1.1",
-        "eslint-plugin-vue": "^5.1.0",
-        "node-sass": "^4.11.0",
-        "nodemon": "^1.18.9",
-        "pug": "^2.0.3",
-        "pug-plain-loader": "^1.0.0",
-        "require-extension-hooks": "^0.3.3",
-        "require-extension-hooks-babel": "^0.1.1",
-        "require-extension-hooks-vue": "^2.0.0",
-        "sass-loader": "^7.1.0",
-        "yaml-loader": "^0.5.0"
-    },
-    "eslintConfig": {
-        "env": {
-            "browser": true,
-            "node": true
-        },
-        "extends": [
-            "eslint:recommended",
-            "plugin:vue/recommended"
-        ],
-        "parserOptions": {
-            "parser": "babel-eslint"
-        },
-        "rules": {
-            "indent": [
-                "error",
-                4
-            ],
-            "no-empty": 0,
-            "import/newline-after-import": "off",
-            "eol-last": "off",
-            "no-console": "off",
-            "no-undef": "off"
-        }
-    },
-    "eslintIgnore": [
-        "nuxt.config.js",
-        "ava.config.js"
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
     ],
-    "browserslist": [
-        "> 1%",
-        "last 2 versions"
-    ]
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "indent": [
+        "error",
+        4
+      ],
+      "no-empty": 0,
+      "import/newline-after-import": "off",
+      "eol-last": "off",
+      "no-console": "off",
+      "no-undef": "off"
+    }
+  },
+  "eslintIgnore": [
+    "nuxt.config.js",
+    "ava.config.js"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

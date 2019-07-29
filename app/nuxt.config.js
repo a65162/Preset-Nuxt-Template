@@ -67,7 +67,8 @@ module.exports = {
                 // baseUrl: "http://www.fucosolution.com.tw"
             }
         ],
-        "@nuxtjs/sitemap"
+        "@nuxtjs/sitemap",
+        ['nuxt-memwatch', { averages: true }],
     ],
     styleResources: {
         scss: [
